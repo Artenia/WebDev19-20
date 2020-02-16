@@ -12,9 +12,8 @@ foreach (glob(__DIR__."/classes/*.php") as $filename)
 
 $request = explode('/', $_SERVER['REQUEST_URI'])[2];
 
-var_dump(request);
 switch ($request) {
-    case '' :
+    case 'home' :
         $controller = new HomeController();
         break;
 
