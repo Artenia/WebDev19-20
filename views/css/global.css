@@ -1,0 +1,24 @@
+/*PRODUCT LIST*/
+
+.product_list .card-text{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.product_list .price{
+    font-size: 20px;
+}
+
+.product_list .add-to-cart{
+    font-size: 16px;
+    padding: 5px;
+}
+
+
+/*HOMEPAGE*/
+
+h3{
+    border-bottom: 4px solid #46659f;
+}

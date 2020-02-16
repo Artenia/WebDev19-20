@@ -1,0 +1,7 @@
+#ignore smarty cache
+/views/templates_c/*
+/views/cache/*
+/.idea/
+/.idea/*
+!/views/cache/README
+!/views/templates_c/README
