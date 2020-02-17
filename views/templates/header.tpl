@@ -41,13 +41,16 @@
                    <li class="nav-item active">
                         <a class="nav-link" href="home">Home <span class="sr-only">(current)</span></a>
                     </li>
-                   <li class="nav-item">
-                       <div class="dropdown-menu" aria-labelledby="navbarCategorie">
-                           {foreach $categories as $categorie}
-                               <a class="dropdown-item" href="categorie?id={$categorie['cat_id']}">{$categorie['cat_nom']}</a>
-                           {/foreach}
-                       </div>
-                  </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Catégories
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            {foreach $categories as $categorie}
+                                <a class="dropdown-item" href="categorie?id={$categorie['cat_id']}">{$categorie['cat_nom']}</a>
+                            {/foreach}
+                        </div>
+                    </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">

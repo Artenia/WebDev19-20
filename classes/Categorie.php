@@ -6,7 +6,7 @@ class Categorie extends BaseEntity
     protected $cat_nom;
 
     public static $definition = array(
-        'table' => 'categorie',
+        'table' => 'categories',
         'primary' => 'cat_id',
         'fields' => array(
             'cat_id' => 'cat_id',
@@ -17,7 +17,7 @@ class Categorie extends BaseEntity
     public static function getCategories()
     {
         $db = DB::getInstance();
-        $sql = 'SELECT * FROM categorie';
+        $sql = 'SELECT * FROM categories';
         $st = $db->query($sql);
         return $st->fetchAll(PDO::FETCH_ASSOC);
     }
