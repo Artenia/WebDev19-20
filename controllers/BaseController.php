@@ -17,6 +17,11 @@ abstract class BaseController
         $this->renderView();
     }
 
+    public function getCategories()
+    {
+        return Categorie::getCategories();
+    }
+
 
     /**
      * Cette méthode gère la logique permettant l'affichage de la vue associée à ce controller.
@@ -24,7 +29,7 @@ abstract class BaseController
      */
     protected function renderView()
     {
-        $this->smarty->getHeader($this->getAssets(), true, $this->name); // Affichage du header via SmartyLoader.
+        $this->smarty->getHeader($this->getAssets(), true, $this->name, $this->getCategories()); // Affichage du header via SmartyLoader.
         $this->smarty->assign($this->getTemplateVars()); // Assignation des variables nécessaires à notre vue.
         $this->smarty->display(strtolower($this->name).'.tpl'); // Rendu propre à notre controller.
         $this->smarty->getFooter(); // Affichage du footer via SmartyLoader.

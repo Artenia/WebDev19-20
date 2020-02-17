@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-02-16 23:57:59
+/* Smarty version 3.1.33, created on 2020-02-17 16:04:33
   from 'C:\wamp64\www\site\views\templates\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e49d707eaa587_07175850',
+  'unifunc' => 'content_5e4ab991e7af00_64515178',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8d39866309803c08ab3b8dec682bc2e73b0c6890' => 
     array (
       0 => 'C:\\wamp64\\www\\site\\views\\templates\\header.tpl',
-      1 => 1581897479,
+      1 => 1581955473,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e49d707eaa587_07175850 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e4ab991e7af00_64515178 (Smarty_Internal_Template $_smarty_tpl) {
 ?><head>
     <title><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
 </title>
@@ -83,7 +83,20 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                         <a class="nav-link" href="home">Home <span class="sr-only">(current)</span></a>
                     </li>
                    <li class="nav-item">
-                       <a class="nav-link" href="products">Products <span class="sr-only">(current)</span></a>
+                       <div class="dropdown-menu" aria-labelledby="navbarCategorie">
+                           <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['categories']->value, 'categorie');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['categorie']->value) {
+?>
+                               <a class="dropdown-item" href="categorie?id=<?php echo $_smarty_tpl->tpl_vars['categorie']->value['cat_id'];?>
+"><?php echo $_smarty_tpl->tpl_vars['categorie']->value['cat_nom'];?>
+</a>
+                           <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+                       </div>
                   </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">

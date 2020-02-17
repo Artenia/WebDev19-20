@@ -1,6 +1,10 @@
 <div class="container">
     <br>
     <h3>Les produits</h3>
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary">Guitare</button>
+        <button type="button" class="btn btn-secondary">Basse</button>
+    </div>
     <div class="row product_list ">
 
         {foreach $products as $product}

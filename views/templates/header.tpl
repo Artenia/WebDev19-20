@@ -42,7 +42,11 @@
                         <a class="nav-link" href="home">Home <span class="sr-only">(current)</span></a>
                     </li>
                    <li class="nav-item">
-                       <a class="nav-link" href="products">Products <span class="sr-only">(current)</span></a>
+                       <div class="dropdown-menu" aria-labelledby="navbarCategorie">
+                           {foreach $categories as $categorie}
+                               <a class="dropdown-item" href="categorie?id={$categorie['cat_id']}">{$categorie['cat_nom']}</a>
+                           {/foreach}
+                       </div>
                   </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-02-17 14:17:42
+/* Smarty version 3.1.33, created on 2020-02-17 15:37:37
   from 'C:\wamp64\www\site\views\templates\products.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e4aa086805ed4_34677976',
+  'unifunc' => 'content_5e4ab341cf8925_48207310',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6a359f105112fd80a296cd319ea28e37188ad4fc' => 
     array (
       0 => 'C:\\wamp64\\www\\site\\views\\templates\\products.tpl',
-      1 => 1581949061,
+      1 => 1581953857,
       2 => 'file',
     ),
   ),
@@ -20,10 +20,14 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e4aa086805ed4_34677976 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e4ab341cf8925_48207310 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="container">
     <br>
     <h3>Les produits</h3>
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary">Guitare</button>
+        <button type="button" class="btn btn-secondary">Basse</button>
+    </div>
     <div class="row product_list ">
 
         <?php
