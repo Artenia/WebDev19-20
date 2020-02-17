@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Class BaseController
  * Classe abstraite servant de modèle à nos controllers
