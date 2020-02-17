@@ -5,7 +5,8 @@
 
         {foreach $products as $product}
             <div class="col-md-3 product_card ">
-                <div class="card">
+                <a href="product?id={$product->getId()}">
+                    <div class="card">
                     <img src="./views/img/products/{$product->getId()}.jpg" class="card-img-top" alt="{$product->getName()}">
                     <div class="card-body">
                         <h5 class="card-title">{$product->getName()}</h5>
@@ -20,6 +21,7 @@
                         </div>
                     </div>
                 </div>
+                </a>
             </div>
         {/foreach}
 

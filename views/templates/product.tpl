@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-md-12">
             <h2 class="bd-title">{$product->getName()}</h2>
-            <h6 class="bd-lead">{$product->getShortDesc()}</h6>
+            <h6 class="bd-lead">{$product->getShortDescription()}</h6>
         </div>
     </div>
     <div class="row">
@@ -12,7 +12,7 @@
         </div>
         <div class="col-md-5">
             <p>
-                {$product->getLongDesc()}
+                {$product->getLongDescription()}
             </p>
         </div>
         <div class="col-md-3 bg-primary">

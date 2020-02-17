@@ -34,9 +34,7 @@
 
     <h3>BEST SELLERS</h3>
     <div class="row product_list ">
-
-        {foreach $products as $product}
-
+        {foreach $bests as $product}
             <a href="product?id={$product->getId()}">
                <div class="col-md-3 product_card ">
                    <div class="card">
@@ -57,8 +55,7 @@
                </div>
             </a>
         {/foreach}
-
     </div>
-    <br>
+    <br><br><br>
 
 </div>
