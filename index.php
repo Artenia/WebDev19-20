@@ -21,7 +21,11 @@ switch ($request) {
         $controller = new ProductsController();
         break;
 
-    default:
+    case (preg_match('/product*/', $request) ? true : false) :
+        $controller = new ProductController();
+        break;
+
+        default:
         http_response_code(404);
         echo '404';
         break;

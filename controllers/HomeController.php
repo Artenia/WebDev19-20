@@ -8,7 +8,7 @@ class HomeController extends BaseController
     {
         return array(
             "controller" => $this->name,
-            "products" => Product::getEntities(),
+            "products"=> Product::getEntities(),
         );
     }
 }
