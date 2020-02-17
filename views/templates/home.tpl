@@ -37,7 +37,7 @@
 
         {foreach $products as $product}
 
-            <a href="product">
+            <a href="product?id={$product->getId()}">
                <div class="col-md-3 product_card ">
                    <div class="card">
                     <img src="./views/img/products/{$product->getId()}.jpg" class="card-img-top" alt="{$product->getName()}">
