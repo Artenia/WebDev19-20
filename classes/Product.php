@@ -52,10 +52,10 @@ class Product extends BaseEntity
         return $this->long_description;
     }
 
-    public static function getBestProducts()
+    public static function getBests()
     {
         $db = DB::getInstance();
-        $st = $db->query('SELECT * FROM products LIMIT 4');
+        $st = $db->query('SELECT * FROM product LIMIT 4');
         $arr = $st->fetchAll(PDO::FETCH_ASSOC);
         foreach ($arr as $pid)
         {
