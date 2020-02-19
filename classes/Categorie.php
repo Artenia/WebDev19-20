@@ -10,7 +10,7 @@ class Categorie extends BaseEntity
         'primary' => 'cat_id',
         'fields' => array(
             'cat_id' => 'cat_id',
-            'cat_nom' => 'cat_nom'
+            'cat_nom' => 'cat_nom',
         )
     );
 

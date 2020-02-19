@@ -21,13 +21,14 @@ class SmartyLoader extends Smarty
     // $assets contenant un tableau de chemin d'accès vers nos fichier js et css
     // $bootstrap contenant un boolean afin d'activer ou non la librairie Bootstrap
     // $title contenant le titre de la page sous forme de chaîne de caractère
-    public function getHeader($assets = array("css" => array(), "js" => array()), $bootstrap = false, $title="New page")
+    public function getHeader($assets = array("css" => array(), "js" => array()), $bootstrap = false, $title="New page",$categories)
     {
         $assets['css'][]='./views/css/global.css';
         $this->assign(array(
             'title' => $title,
             'assets' => $assets,
             'bootstrap' => $bootstrap,
+            'categories' => $categories,
         ));
         $this->display('header.tpl');
     }

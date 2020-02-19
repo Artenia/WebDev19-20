@@ -22,6 +22,24 @@ class Product extends BaseEntity
         ),
     );
 
+    public static function getCategorie($id)
+    {
+        $db = DB::getInstance();
+        $sql='SELECT id FROM product
+                                    LEFT JOIN categories on product.cat_id = categories.cat_id
+                                    WHERE categories.cat_id = '.$id;
+        var_dump($sql);
+        $st = $db->query('SELECT id FROM product
+                                    LEFT JOIN categories on product.cat_id = categories.cat_id
+                                    WHERE categories.cat_id = '.$id);
+        $arr = $st->fetchAll(PDO::FETCH_ASSOC);
+        foreach ($arr as $pid)
+        {
+            $produits[] = new self($pid['id']);
+        }
+        return $produits;
+    }
+
     public function getId()
     {
         return $this->id;

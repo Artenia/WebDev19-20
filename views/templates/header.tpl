@@ -47,7 +47,7 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             {foreach $categories as $categorie}
-                                <a class="dropdown-item" href="categorie?id={$categorie['cat_id']}">{$categorie['cat_nom']}</a>
+                                <a class="dropdown-item" href=categorie?id={$categorie['cat_id']}">{$categorie['cat_nom']}</a>
                             {/foreach}
                         </div>
                     </li>

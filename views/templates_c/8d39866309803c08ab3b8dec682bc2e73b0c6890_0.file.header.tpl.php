@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-02-17 16:17:12
+/* Smarty version 3.1.33, created on 2020-02-17 16:57:30
   from 'C:\wamp64\www\site\views\templates\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e4abc880107e2_86363681',
+  'unifunc' => 'content_5e4ac5fa7af054_87710165',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8d39866309803c08ab3b8dec682bc2e73b0c6890' => 
     array (
       0 => 'C:\\wamp64\\www\\site\\views\\templates\\header.tpl',
-      1 => 1581956231,
+      1 => 1581958387,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e4abc880107e2_86363681 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e4ac5fa7af054_87710165 (Smarty_Internal_Template $_smarty_tpl) {
 ?><head>
     <title><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
 </title>
@@ -92,7 +92,7 @@ $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->t
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['categorie']->value) {
 ?>
-                                <a class="dropdown-item" href="categorie?id=<?php echo $_smarty_tpl->tpl_vars['categorie']->value['cat_id'];?>
+                                <a class="dropdown-item" href=categorie?id=<?php echo $_smarty_tpl->tpl_vars['categorie']->value['cat_id'];?>
 "><?php echo $_smarty_tpl->tpl_vars['categorie']->value['cat_nom'];?>
 </a>
                             <?php
