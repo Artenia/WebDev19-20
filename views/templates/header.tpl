@@ -26,6 +26,7 @@
         {/if}
         {*END - JS INCLUSION*}
     {/if}
+
 </head>
 <body>
     <header id="header" class="bg-light">
@@ -50,6 +51,9 @@
                                 <a class="dropdown-item" href=categorie?id={$categorie['cat_id']}">{$categorie['cat_nom']}</a>
                             {/foreach}
                         </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact">Contact <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
