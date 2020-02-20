@@ -56,8 +56,8 @@
                         <a class="nav-link" href="contact">Contact <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0" role="search" action="search?" method="get">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Entrer le mot clé" aria-label="Recherche">
+                <form class="form-inline my-2 my-lg-0" action="search?" method="get">
+                    <input class="form-control mr-sm-2" name="keyword" type="search" placeholder="Entrer le mot clé">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Recherche</button>
                 </form>
             </div>

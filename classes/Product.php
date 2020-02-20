@@ -84,4 +84,14 @@ class Product extends BaseEntity
     {
         return $this->cat_nom;
     }
+
+    public static function search($keyword)
+    {
+        $arr = parent::search($keyword);
+        foreach ($arr as $produit)
+        {
+            $produits[] = new self($produit['id']);
+        }
+        return $produits;
+    }
 }

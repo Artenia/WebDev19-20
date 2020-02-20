@@ -7,7 +7,6 @@ class SearchController extends BaseController
     protected function search()
     {
         $keyword = ($_GET['keyword']);
-        var_dump($keyword);
         if (!isset($keyword))
         {
             return false;

@@ -9,8 +9,9 @@ foreach (glob(__DIR__."/classes/*.php") as $filename)
 {
     include_once $filename;
 }
-
+var_dump($_SERVER['REQUEST_URI']);
 $request = explode('/', $_SERVER['REQUEST_URI'])[2];
+
 
 switch ($request) {
     case 'home' :
@@ -25,7 +26,7 @@ switch ($request) {
         $controller = new ProductController();
         break;
 
-    case (preg_match('/categorie*/', $request) ? true : false) :
+    case (preg_match('/categorie\?id=*/', $request) ? true : false) :
         $controller = new CategorieController();
         break;
 
