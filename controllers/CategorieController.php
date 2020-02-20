@@ -12,6 +12,7 @@ class CategorieController extends BaseController
         return array(
             'controller' => $this->name,
             'products'=> $this->getProducts($_GET['id']),
+            'cat_nom'=> $_GET['cat_nom'],
         );
     }
 

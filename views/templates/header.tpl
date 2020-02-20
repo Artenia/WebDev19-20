@@ -28,7 +28,7 @@
     {/if}
 
 </head>
-<body>
+<body onload="charLeft()">
     <header id="header" class="bg-light">
         {* HEADER EXAMPLE FROM BOOSTRAP DOCUMENTATION*}
         <nav class="navbar navbar-expand-lg navbar-light  container" >
@@ -44,11 +44,11 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Catégories
+                            Produits
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             {foreach $categories as $categorie}
-                                <a class="dropdown-item" href=categorie?id={$categorie['cat_id']}">{$categorie['cat_nom']}</a>
+                                <a class="dropdown-item" href="categorie?id={$categorie['cat_id']}&cat_nom={$categorie['cat_nom']}">{$categorie['cat_nom']}</a>
                             {/foreach}
                         </div>
                     </li>

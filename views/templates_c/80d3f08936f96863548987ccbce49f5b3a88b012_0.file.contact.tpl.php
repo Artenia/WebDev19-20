@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-02-19 16:09:53
+/* Smarty version 3.1.33, created on 2020-02-19 21:45:35
   from 'C:\wamp64\www\site\views\templates\contact.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e4d5dd1a75453_61971191',
+  'unifunc' => 'content_5e4dac7f68b7d3_72308885',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '80d3f08936f96863548987ccbce49f5b3a88b012' => 
     array (
       0 => 'C:\\wamp64\\www\\site\\views\\templates\\contact.tpl',
-      1 => 1582128593,
+      1 => 1582148734,
       2 => 'file',
     ),
   ),
@@ -20,10 +20,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e4d5dd1a75453_61971191 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e4dac7f68b7d3_72308885 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="container">
     <br>
     <h3>CONTACT</h3>
+    <br>
     <div class="container">
         <form>
             <div class="form-row">
@@ -52,8 +53,9 @@ function content_5e4d5dd1a75453_61971191 (Smarty_Internal_Template $_smarty_tpl)
             </div>
             <div class="form-group">
                 <label for="message">Message</label>
-                <textarea class="form-control" id="message" rows="18" minlength="50" maxlength="2000" required></textarea>
-                <small>Le message doit contenir 50 caractères minimum et 2000 au maximum.  </small>
+                <textarea id="msg" oninput="charLeft()" maxlength="2000" class="form-control" id="message" rows="18" minlength="50" maxlength="2000" placeholder="Entrer votre message..." required></textarea>
+                <small id="r"></small>
+
             </div>
             <button class="btn btn-primary" type="submit">Envoyer le message</button>
         </form>

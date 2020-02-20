@@ -8,6 +8,7 @@ class Product extends BaseEntity
     protected $stock;
     protected $short_description;
     protected $long_description;
+    protected $cat_nom;
 
     public static $definition = array(
         "table" => "product",
@@ -19,16 +20,13 @@ class Product extends BaseEntity
             "stock",
             "short_description",
             "long_description",
+            "cat_nom",
         ),
     );
 
     public static function getCategorie($id)
     {
         $db = DB::getInstance();
-        $sql='SELECT id FROM product
-                                    LEFT JOIN categories on product.cat_id = categories.cat_id
-                                    WHERE categories.cat_id = '.$id;
-        var_dump($sql);
         $st = $db->query('SELECT id FROM product
                                     LEFT JOIN categories on product.cat_id = categories.cat_id
                                     WHERE categories.cat_id = '.$id);
@@ -80,5 +78,10 @@ class Product extends BaseEntity
             $bests[] = new self($pid['id']);
         }
         return $bests;
+    }
+
+    public static function getCatNom()
+    {
+        return $this->cat_nom;
     }
 }

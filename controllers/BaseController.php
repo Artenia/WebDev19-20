@@ -44,7 +44,7 @@ abstract class BaseController
     {
         return $assets = array(
             "css" => array(),
-            "js" => array()
+            "js" => array("views/js/function.js")
         );
     }
 

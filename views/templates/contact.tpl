@@ -1,6 +1,7 @@
 <div class="container">
     <br>
     <h3>CONTACT</h3>
+    <br>
     <div class="container">
         <form>
             <div class="form-row">
@@ -29,8 +30,9 @@
             </div>
             <div class="form-group">
                 <label for="message">Message</label>
-                <textarea class="form-control" id="message" rows="18" minlength="50" maxlength="2000" required></textarea>
-                <small>Le message doit contenir 50 caractères minimum et 2000 au maximum.  </small>
+                <textarea id="msg" oninput="charLeft()" maxlength="2000" class="form-control" id="message" rows="18" minlength="50" maxlength="2000" placeholder="Entrer votre message..." required></textarea>
+                <small id="r"></small>
+
             </div>
             <button class="btn btn-primary" type="submit">Envoyer le message</button>
         </form>
