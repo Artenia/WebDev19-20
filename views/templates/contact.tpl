@@ -30,7 +30,7 @@
             </div>
             <div class="form-group">
                 <label for="message">Message</label>
-                <textarea id="msg" oninput="charLeft()" maxlength="2000" class="form-control" id="message" rows="18" minlength="50" maxlength="2000" placeholder="Entrer votre message..." required></textarea>
+                <textarea id="msg" oninput="charLeft()" maxlength="2000" class="form-control" id="message" rows="7" minlength="50" maxlength="2000" placeholder="Entrer votre message..." required></textarea>
                 <small id="r"></small>
 
             </div>
