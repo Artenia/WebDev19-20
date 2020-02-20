@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-02-20 15:28:16
+/* Smarty version 3.1.33, created on 2020-02-20 15:39:30
   from 'C:\wamp64\www\site\views\templates\product.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e4ea590894c16_61877577',
+  'unifunc' => 'content_5e4ea832e62ac8_80595200',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f9e857311bde509862af6ea8221df958f550c45d' => 
     array (
       0 => 'C:\\wamp64\\www\\site\\views\\templates\\product.tpl',
-      1 => 1582212495,
+      1 => 1582213168,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e4ea590894c16_61877577 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e4ea832e62ac8_80595200 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="container">
     <br>
     <div class="row">
@@ -35,7 +35,7 @@ function content_5e4ea590894c16_61877577 (Smarty_Internal_Template $_smarty_tpl)
         <div class="col-md-4">
             <img src="./views/img/products/<?php echo $_smarty_tpl->tpl_vars['product']->value->getId();?>
 .jpg" alt="<?php echo $_smarty_tpl->tpl_vars['product']->value->getName();?>
-" width="400" height="400">
+" width="400">
         </div>
         <div class="col-md-5">
             <p>

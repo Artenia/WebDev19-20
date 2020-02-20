@@ -8,7 +8,7 @@
     </div>
     <div class="row">
         <div class="col-md-4">
-            <img src="./views/img/products/{$product->getId()}.jpg" alt="{$product->getName()}" width="400" height="400">
+            <img src="./views/img/products/{$product->getId()}.jpg" alt="{$product->getName()}" width="400">
         </div>
         <div class="col-md-5">
             <p>
