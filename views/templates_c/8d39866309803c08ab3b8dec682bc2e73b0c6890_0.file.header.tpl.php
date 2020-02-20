@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-02-20 14:33:15
+/* Smarty version 3.1.33, created on 2020-02-20 14:58:18
   from 'C:\wamp64\www\site\views\templates\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e4e98ab1b5ec7_37621036',
+  'unifunc' => 'content_5e4e9e8ab9ea81_55115184',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8d39866309803c08ab3b8dec682bc2e73b0c6890' => 
     array (
       0 => 'C:\\wamp64\\www\\site\\views\\templates\\header.tpl',
-      1 => 1582209051,
+      1 => 1582210695,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e4e98ab1b5ec7_37621036 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e4e9e8ab9ea81_55115184 (Smarty_Internal_Template $_smarty_tpl) {
 ?><head>
     <title><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
 </title>
@@ -108,7 +108,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0" action="search?" method="get">
-                    <input class="form-control mr-sm-2" name="keyword" type="search" placeholder="Entrer le mot clé">
+                    <input class="form-control mr-sm-2" name="keyword" type="search" placeholder="Entrer le mot clé" required>
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Recherche</button>
                 </form>
             </div>

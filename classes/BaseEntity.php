@@ -44,7 +44,7 @@ abstract class BaseEntity
     public static function search($keyword)
     {
         $db = DB::getInstance();
-        $sql = 'SELECT * FROM '.static::$definition['table'].' WHERE '.static::$definition['fields']['name'].' like "%'.$keyword.'%"';
+        $sql = 'SELECT * FROM '.static::$definition['table'].' WHERE '.static::$definition['fields'][1].' like "%'.$keyword.'%"';
         $st = $db->query($sql);
         return $st->fetchAll(PDO::FETCH_ASSOC);
 

@@ -9,7 +9,7 @@ foreach (glob(__DIR__."/classes/*.php") as $filename)
 {
     include_once $filename;
 }
-var_dump($_SERVER['REQUEST_URI']);
+
 $request = explode('/', $_SERVER['REQUEST_URI'])[2];
 
 
